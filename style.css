@@ -12,7 +12,6 @@ body {
     font-family: "SF Pro Display", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #f5f5f7;
 }
 
 .intro {
@@ -80,6 +79,7 @@ body {
     padding: 10vh;
     padding-left: 15vh;
     padding-right: 15vh;
+    color: #f5f5f7;
 }
 .image-bot {
     display: flex;
@@ -126,3 +126,107 @@ body {
 /* .animate__animated.animate__zoomIn {
     --animate-delay: 3.9s;
 } */
+
+.ig {
+    display: flex;
+    align-items: center;
+    padding: 5vh;
+    border-radius: 28px;
+    background-color: #fff;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.ig-avt {
+    flex: 1; /* Chia đều không gian giữa các phần tử */
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vh;
+}
+
+.ig-avt img {
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ig-info {
+    flex: 2; /* Chia nhiều không gian hơn cho phần thông tin */
+    text-align: left;
+    padding: 0;
+    background-color: #0095f6;
+}
+
+.ig-id {
+    font-weight: 700;
+    font-size: 5vh;
+    color: #000;
+}
+
+.ig-name-pro {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vh;
+}
+
+.ig-name {
+    color: #000;
+}
+
+.ig-pro {
+    color: #91918c;
+    margin-left: 10px;
+}
+
+.ig-description {
+    margin-top: 15px;
+    color: #000;
+}
+
+.ig-contact {
+    flex: 1; /* Chia đều không gian giữa các phần tử */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.instagram img {
+    width: 24px;
+    height: 24px;
+}
+
+.visit-btn {
+    padding: 10px 20px;
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: ease 0.25s;
+}
+
+.visit-btn:hover {
+    background-color: #2a6bb2;
+}
+.ig-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
