@@ -9,3 +9,4 @@ classname.addEventListener('animationend', ()=>{
     header.style.opacity = 1;
     header.classList.add('animate__animated','animate__slideInDown');
 });
+

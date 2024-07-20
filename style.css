@@ -12,6 +12,7 @@ body {
     font-family: "SF Pro Display", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #f5f5f7;
 }
 
 .intro {
@@ -76,7 +77,6 @@ body {
 }
 .about {
     background-color: #141414;
-    color: white;
     padding: 10vh;
     padding-left: 15vh;
     padding-right: 15vh;
@@ -89,13 +89,13 @@ body {
     width: 100%;
 }
 .image-bot img {
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
     width: 100%;
 }
 .image-bot-div {
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
     background-color: #000000;
     width: 100%;
     box-sizing: border-box;
@@ -109,6 +109,19 @@ body {
     font-size: 3vh;
     font-weight: 600;
     text-align: justify;
+}
+.contact {
+    background-color: #f3f6f6;
+    padding: 10vh;
+    padding-left: 15vh;
+    padding-right: 15vh;
+}
+.contact>.text {
+    color: #1d1d1f;
+}
+.contact>.title {
+    background-color: rgba(235, 148, 148, 0.697);
+    color: #5a0000;
 }
 /* .animate__animated.animate__zoomIn {
     --animate-delay: 3.9s;
