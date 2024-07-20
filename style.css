@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
 @font-face {
     font-family: 'SF Mono';
     src: url('/fonts/SFMono-Bold.otf');
@@ -130,11 +131,18 @@ body {
 .ig {
     display: flex;
     align-items: center;
-    padding: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     border-radius: 28px;
     background-color: #fff;
     width: 100%;
     margin: 20px auto;
+    transition: ease-in 0.25s;
+    margin-bottom: 5vh;
+}
+
+.ig:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .ig-avt {
@@ -152,10 +160,9 @@ body {
 }
 
 .ig-info {
-    flex: 2; /* Chia nhiều không gian hơn cho phần thông tin */
     text-align: left;
     padding: 0;
-    background-color: #0095f6;
+    /* background-color: #0095f6; */
 }
 
 .ig-id {
@@ -200,6 +207,7 @@ body {
 }
 
 .instagram img {
+    padding-left: 2vh;
     width: 24px;
     height: 24px;
 }
@@ -229,4 +237,137 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 2vh;
+}
+.stats-stats-num {
+    font-size: 5vh;
+    font-weight: 800;
+}
+.footer {
+    background-color: #1d1d1f;
+    bottom: 0px;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.footer-text {
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.credit {
+    color: white;
+    font-weight: 900;
+}
+.copyright {
+    color: white;
+    font-weight: 500;
+    max-width: 75vh;
+}
+
+.img-footer {
+    border-radius: 50%;
+}
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease-in-out 0.25s;
+    border-radius: 28px; /* Bo góc cho phần tử cha */
+    overflow: hidden; /* Đảm bảo các phần tử con không vượt ra ngoài */
+    margin-top: 20px; /* Khoảng cách từ phần tử trên */
+    position: relative; /* Để tooltip có thể định vị chính xác */
+}
+
+.emails {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box; /* Đảm bảo padding và border được tính vào kích thước tổng */
+}
+
+.email-child {
+    position: relative; /* Để tooltip hoạt động chính xác */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    font-size: 4vh;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+.email-child.changed {
+    font-weight: 900; /* Màu sắc khi hiển thị thông báo "Đã sao chép" */
+}
+
+.email-left {
+    border-right: 1.5px solid black;
+}
+
+.email-right {
+    border-left: 1.5px solid black;
+}
+
+.email-label {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    font-size: 4vh;
+    box-sizing: border-box; /* Đảm bảo padding và border được tính vào kích thước tổng */
+}
+
+.email-child:hover {
+    background-color: #f0f0f0; /* Thay đổi màu nền khi hover */
+}
+.ig-name {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.email:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.email-child::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 2vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Để tooltip không bị ảnh hưởng bởi các sự kiện chuột */
+}
+.email-child:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%; /* Định vị phía trên phần tử */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 2vh;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Để tooltip không bị ảnh hưởng bởi các sự kiện chuột */
 }
