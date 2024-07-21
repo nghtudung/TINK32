@@ -389,3 +389,18 @@ body {
     animation-timeline: view();
     animation-range: entry 0;
 }
+.about-text {
+    list-style-type: none; /* Loại bỏ ký hiệu dấu chấm đầu dòng */
+    padding: 0; /* Loại bỏ khoảng trống bên trong ul */
+    margin: 0; /* Loại bỏ khoảng trống bên ngoài ul */
+}
+li.text {
+    display: inline; /* Hiển thị các thẻ li trên cùng một dòng */
+    margin-right: 1px; /* Khoảng cách giữa các thẻ li */
+    font-size: 5vh;
+    transition: opacity 0.5s;
+    opacity: 0.15;
+}
+.after-intro, .footer {
+    opacity: 0;
+}
