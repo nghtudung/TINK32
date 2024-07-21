@@ -95,3 +95,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set initial opacity
     updateOpacity();
 });
+
+const fileUrl = 'https://tin-k32-cbn.glitch.me/fler.txt'; // Thay thế bằng URL của file .txt
+
+function fetchFileContent() {
+    fetch(fileUrl)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(text => {
+            document.getElementById('fler').innerText = text;
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+
+// Đọc file mỗi 5 giây (5000 ms)
+setInterval(fetchFileContent, 5000);
+
+// Đọc file ngay lập tức khi trang được tải
+fetchFileContent();

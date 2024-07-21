@@ -269,6 +269,8 @@ body {
     color: white;
     font-weight: 500;
     max-width: 75vh;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .img-footer {
@@ -403,4 +405,250 @@ li.text {
 }
 .after-intro, .footer {
     opacity: 0;
+}
+
+
+/* ... (Các quy tắc CSS khác vẫn giữ nguyên) ... */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about, .contact {
+        padding: 5vh;
+    }
+
+    .about>.text, .contact>.text {
+        font-size: 2.5vh;
+    }
+
+    .image-bot {
+        width: 100%;
+    }
+
+    .image-bot img {
+        width: 100%;
+        border-top-right-radius: 28px;
+        border-top-left-radius: 28px;
+    }
+
+    .image-bot-div {
+        width: 100%;
+        border-bottom-right-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+
+    .title {
+        font-size: 4vh;
+    }
+
+    .text {
+        font-size: 2vh;
+    }
+
+    .ig {
+        /* Không thay đổi */
+    }
+
+    .ig-avt img {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .ig-id {
+        font-size: 4vh;
+    }
+
+    .ig-name-pro {
+        font-size: 2vh;
+    }
+
+    .ig-description {
+        font-size: 1.5vh;
+    }
+
+    .stats-stats-num {
+        font-size: 3vh;
+    }
+
+    .stats {
+        padding: 1vh;
+    }
+
+    .visit-btn {
+        font-size: 2vh;
+    }
+
+    .email {
+        flex-direction: column; /* Chuyển sang dạng cột */
+    }
+
+    .emails {
+        flex-direction: column; /* Chuyển sang dạng cột */
+    }
+
+    .email-child {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        border-left: none; /* Loại bỏ viền trái */
+        border-right: none; /* Loại bỏ viền phải */
+        border-bottom: 1.5px solid black; /* Thêm viền dưới */
+    }
+
+    .email-child:last-child {
+        border-bottom: none; /* Loại bỏ viền dưới của phần tử cuối cùng */
+    }
+
+    .email-label {
+        font-size: 2vh;
+    }
+
+    .email-label.changed {
+        font-size: 2vh;
+    }
+
+    /* Điều chỉnh cho email */
+    .email-child {
+        display: flex;
+        flex-direction: column; /* Chuyển sang dạng cột */
+        margin-bottom: 1vh; /* Khoảng cách giữa các phần tử */
+    }
+
+    .email-child:first-child {
+        margin-bottom: 1vh; /* Khoảng cách dưới của phần tử đầu tiên */
+    }
+
+    .email-child:nth-child(2), .email-child:nth-child(3) {
+        margin-top: 0; /* Loại bỏ khoảng cách trên */
+    }
+
+    .email-label {
+        margin-bottom: 1vh; /* Khoảng cách dưới cho email-label */
+    }
+
+    .email-left, .email-right {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+
+    .email-left, .email-right {
+        font-size: 1.8vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .about, .contact {
+        padding: 3vh;
+    }
+
+    .about>.text, .contact>.text {
+        font-size: 2vh;
+    }
+
+    .title {
+        font-size: 3vh;
+    }
+
+    .text {
+        font-size: 1.5vh;
+    }
+
+    .image-bot {
+        width: 100%;
+    }
+
+    .image-bot img {
+        width: 100%;
+        border-top-right-radius: 28px;
+        border-top-left-radius: 28px;
+    }
+
+    .image-bot-div {
+        width: 100%;
+        border-bottom-right-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+
+    .ig {
+        /* Không thay đổi */
+    }
+
+    .ig-avt img {
+        width: 15vh;
+        height: 15vh;
+    }
+
+    .ig-id {
+        font-size: 3vh;
+    }
+
+    .ig-name-pro {
+        font-size: 1.5vh;
+    }
+
+    .ig-description {
+        font-size: 1vh;
+    }
+
+    .stats-stats-num {
+        font-size: 2vh;
+    }
+
+    .stats {
+        padding: 0.5vh;
+    }
+
+    .visit-btn {
+        font-size: 1.5vh;
+    }
+
+    .email {
+        flex-direction: column; /* Chuyển sang dạng cột */
+    }
+
+    .emails {
+        flex-direction: column; /* Chuyển sang dạng cột */
+    }
+
+    .email-child {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        border-left: none; /* Loại bỏ viền trái */
+        border-right: none; /* Loại bỏ viền phải */
+        border-bottom: 1.5px solid black; /* Thêm viền dưới */
+    }
+
+    .email-child:last-child {
+        border-bottom: none; /* Loại bỏ viền dưới của phần tử cuối cùng */
+    }
+
+    .email-label {
+        font-size: 2vh;
+    }
+
+    .email-label.changed {
+        font-size: 2vh;
+    }
+
+    /* Điều chỉnh cho email */
+    .email-child {
+        display: flex;
+        flex-direction: column; /* Chuyển sang dạng cột */
+        margin-bottom: 1vh; /* Khoảng cách giữa các phần tử */
+    }
+
+    .email-child:first-child {
+        margin-bottom: 1vh; /* Khoảng cách dưới của phần tử đầu tiên */
+    }
+
+    .email-child:nth-child(2), .email-child:nth-child(3) {
+        margin-top: 0; /* Loại bỏ khoảng cách trên */
+    }
+
+    .email-label {
+        margin-bottom: 1vh; /* Khoảng cách dưới cho email-label */
+    }
+
+    .email-left, .email-right {
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+    }
+
+    .email-left, .email-right {
+        font-size: 1.8vh;
+    }
 }
